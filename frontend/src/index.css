@@ -1,0 +1,54 @@
+/* frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth theme/background transition */
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide scrollbars visually */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Better skeleton shimmer (optional) */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+html {
+  @apply text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900;
+}
+
+html.dark, html.light {
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+* {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
