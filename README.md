@@ -200,7 +200,6 @@ Loads minimal meals instantly + merges cached full meals automatically.
 *(Add your screenshots in this section later)*  
 ```
 ![Homepage](./screenshots/home.png)
-![Search](./screenshots/search.png)
 ```
 
 ---
