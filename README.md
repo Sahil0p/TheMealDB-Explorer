@@ -90,6 +90,12 @@ frontend/
 
 # ⚙️ **Setup Instructions**
 
+## ⚠️ Clone The Repository
+```
+git clone https://github.com/Sahil0p/TheMealDB-Explorer.git
+cd TheMealDB-Explorer
+```
+
 ## 🔧 Backend Setup
 ```
 cd backend
@@ -104,7 +110,7 @@ MEALDB_BASE_URL=https://www.themealdb.com/api/json/v1/1/
 
 Start server:
 ```
-npm start
+npm run dev
 ```
 
 ---
